@@ -49,7 +49,12 @@
     const xWalk = Math.round((x / width * walk) - (walk / 2))
     const yWalk = Math.round((y / height * walk) - (walk / 2))
 
-    text.style.textShadow = `${xWalk}px ${yWalk}px red`
+    text.style.textShadow = `
+      ${xWalk}px ${yWalk}px red
+      ${xWalk * -1}px ${yWalk}px blue
+      ${xWalk}px ${yWalk * -1}px green
+      ${xWalk * -1}px ${yWalk * -1}px yellow
+      `
   }
 
 
